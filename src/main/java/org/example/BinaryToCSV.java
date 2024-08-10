@@ -7,21 +7,32 @@ import java.util.*;
 public class BinaryToCSV {
 
     public static void main(String[] args) {
-        String binaryFilePath = "path/to/your/binaryfile.bin";//二级制文件地址
-        String csvFilePath = "path/to/your/outputfile.csv";//csv文件地址
-        String excelFilePath = "path/to/your/outputfile.csv";//excel文件地址
+        String binaryFilePath = "src/样本.txt";//二级制文件地址
+        //String csvFilePath = "path/to/your/outputfile.csv";//csv文件地址
+        //String excelFilePath = "path/to/your/outputfile.csv";//excel文件地址
+        char a = 1;
         try {
-            File file = new File(binaryFilePath);
-
-            FileInputStream fis = new FileInputStream(file);
-            BufferedInputStream bis = new BufferedInputStream(fis);
-
-            byte[] buffer = new byte[1024];
-            int bytesRead;
-            while ((bytesRead = bis.read(buffer)) != -1) {
-                // 在此处处理读取到的数据
+            //File file = new File(binaryFilePath);
+            //BufferedReader fis = new BufferedReader(new FileReader(binaryFilePath));
+            BufferedReader fis = new BufferedReader(new InputStreamReader(new FileInputStream(binaryFilePath), "gbk"));
+            //FileInputStream fis = new FileInputStream(file);
+            //BufferedInputStream bis = new BufferedInputStream(fis);
+            String line ;
+            int n = 0;
+            while ((line = fis.readLine()) != null) {
+                // 处理每一行的逻辑
+                String[] values = line.split("\u0001"); // 使用0001分割每一行的值
+                List<String> row = new ArrayList<>();
+                for (String value : values) {
+                    System.out.println(value);
+                    row.add(value.trim()); // 去除每个值的空格并添加到行中
+                }
+                n++;
+                if (n>=100){
+                    break;
+                }
             }
-            bis.close();
+            fis.close();
         } catch (IOException ex) {
             System.out.println(ex);
         }
