@@ -26,6 +26,7 @@ public class BinaryToCSV {
             // 会将整个String 列表作为一条数据行写入
             // csvPrinter.printRecord(users);
             // 默认配置不会写表头，如果需要添加表头可以单独设置表头
+            System.out.println("测试文档"+String.format("%04d",n)+".csv");
             for (String[] str : Strs) {
                 csvPrinter.printRecord(str);
             }
@@ -64,15 +65,12 @@ public class BinaryToCSV {
         }
         int part = row.size()/a;
         for(;n < part; n++){
-            generateCsvWithConfig(n,row.subList(0, a), customCsvFormat(headerArr));
-            row.clear();
+            generateCsvWithConfig(n,row.subList(n*a, (n+1)*a), customCsvFormat(headerArr));
         }
         if (!row.isEmpty()) {
             // 业务逻辑数据处理， - 打印替代
-            generateCsvWithConfig(n, row, customCsvFormat(headerArr));
+            generateCsvWithConfig(n, row.subList((n)*a, row.size()), customCsvFormat(headerArr));
         }
-
-
     }
 }
 
