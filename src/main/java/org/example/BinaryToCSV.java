@@ -1,12 +1,13 @@
 package org.example;
 
+import com.alibaba.excel.EasyExcel;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
 import java.util.*;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
+
 
 public class BinaryToCSV {
 
@@ -38,7 +39,6 @@ public class BinaryToCSV {
         }
     }
 
-
     public static void main(String[] args) {
         String binaryFilePath = "src/样本.txt";//二级制文件地址
         //String csvFilePath = "path/to/your/outputfile.csv";//csv文件地址
@@ -57,20 +57,29 @@ public class BinaryToCSV {
                 // 处理每一行的逻辑
                 String[] values = line.split("\u0001"); // 使用0001分割每一行的值
                 //System.out.println(Arrays.toString(values));
-                row.add(values);
+                row.add(values);//csv
             }
             fis.close();
         } catch (IOException ex) {
             System.out.println(ex);
         }
-        int part = row.size()/a;
-        for(;n < part; n++){
-            generateCsvWithConfig(n,row.subList(n*a, (n+1)*a), customCsvFormat(headerArr));
+        List<ExcelTO> excels = new ArrayList<>();
+        for(int i=0;i< row.size();i++){
+            System.out.println(Arrays.toString(row.get(i)));
+            ExcelTO excel = new ExcelTO(row.get(i));
+            excels.add(excel);
         }
-        if (!row.isEmpty()) {
-            // 业务逻辑数据处理， - 打印替代
-            generateCsvWithConfig(n, row.subList((n)*a, row.size()), customCsvFormat(headerArr));
-        }
+
+//        int part = row.size()/a;
+//        for(;n < part; n++){
+
+        EasyExcel.write("src/测试"+String.format("%04d",n)+".xlsx", ExcelTO.class).sheet("测试").doWrite(excels);
+        System.out.println("数据成功写出到Excel文件中");
+            //generateCsvWithConfig(n,row.subList(n*a, (n+1)*a), customCsvFormat(headerArr));
+//        }
+//        if (!row.isEmpty()) {
+//            //generateCsvWithConfig(n, row.subList((n)*a, row.size()), customCsvFormat(headerArr));
+//        }
     }
 }
 
