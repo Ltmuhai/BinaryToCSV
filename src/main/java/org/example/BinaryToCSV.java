@@ -55,7 +55,7 @@ public class BinaryToCSV {
             String line ;
             while ((line = fis.readLine()) != null) {
                 // 处理每一行的逻辑
-                String[] values = line.split("\u0001"); // 使用0001分割每一行的值
+                String[] values = line.split("\u0001",-1); // 使用0001分割每一行的值
                 //System.out.println(Arrays.toString(values));
                 row.add(values);//csv
             }
@@ -65,15 +65,15 @@ public class BinaryToCSV {
         }
         List<ExcelTO> excels = new ArrayList<>();
         for(int i=0;i< row.size();i++){
-            System.out.println(Arrays.toString(row.get(i)));
+            //System.out.println(Arrays.toString(row.get(i)));
             ExcelTO excel = new ExcelTO(row.get(i));
+            //System.out.println(excel);
             excels.add(excel);
         }
-
 //        int part = row.size()/a;
 //        for(;n < part; n++){
 
-        EasyExcel.write("src/测试"+String.format("%04d",n)+".xlsx", ExcelTO.class).sheet("测试").doWrite(excels);
+        EasyExcel.write("src/测试"+String.format("%04d",n)+".xlsx").head(ExcelTO.class).sheet("测试").doWrite(excels);
         System.out.println("数据成功写出到Excel文件中");
             //generateCsvWithConfig(n,row.subList(n*a, (n+1)*a), customCsvFormat(headerArr));
 //        }
