@@ -68,7 +68,7 @@ public class BinaryToCSV {
             //generateCsvWithConfig(n,row.subList(n*splitnum, (n+1)*splitnum), customCsvFormat(headerArr),writepath);
         }
         if (!excels.isEmpty()) {
-            EasyExcel.write(writepath+"excel"+String.format("%04d",n)+".xlsx").head(ExcelTO.class).sheet("测试").doWrite(excels.subList((n)*splitnum, row.size()));
+            EasyExcel.write(writepath+"excel"+String.format("%04d",n)+".xlsx").head(ExcelTO.class).sheet("测试").doWrite(excels.subList((n)*splitnum, excels.size()));
             //generateCsvWithConfig(n, row.subList((n)*splitnum, row.size()), customCsvFormat(headerArr),writepath);
         }
         System.out.println("数据成功写出到Excel文件中");
