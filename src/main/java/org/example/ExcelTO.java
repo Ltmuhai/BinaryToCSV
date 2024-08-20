@@ -36,7 +36,13 @@ public class ExcelTO {
     public void setName(String name) {
         this.name = name;
     }
+    public String getCom() {
+        return com;
+    }
 
+    public void setCom(String com) {
+        this.com = com;
+    }
     public String getIndro() {
         return indro;
     }

@@ -1,0 +1,9 @@
+name = "BinaryToCSV"
+
+[setting]
+    readpath = "src/样本.txt"
+    writepath = "src/writedir/"
+    handarr = ["名字", "公司", "介绍","公司", "地址", "身份证", "时间", "法人", "注册金额", "编号", "网址"]
+    writeform = "EXCEL" #"CSV"or"EXCEL"
+    splitchar = '\u0001' #行内数据的分割符
+    splitnum = 200 #分割文件的大小

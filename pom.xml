@@ -26,5 +26,11 @@
             <artifactId>easyexcel</artifactId>
             <version>3.2.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.hotmoka/toml4j -->
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>toml4j</artifactId>
+            <version>0.7.3</version>
+        </dependency>
     </dependencies>
 </project>

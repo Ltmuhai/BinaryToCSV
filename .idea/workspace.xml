@@ -5,10 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd35631-dc87-4291-84ff-7e0b10d17910" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/config.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BinaryToCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BinaryToCSV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ExcelTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ExcelTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/样本.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/样本.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/测试0000.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0001.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0002.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0003.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0004.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0005.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0006.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0007.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0009.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0010.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0012.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0013.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0014.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0015.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0016.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0017.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0018.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0019.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0020.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0021.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0022.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0023.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0024.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0025.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0026.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0027.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0028.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0029.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0030.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0031.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0032.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0033.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0034.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0035.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0036.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0037.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0038.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0039.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0040.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0041.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0042.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0043.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0044.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0045.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0046.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0047.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0048.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0049.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试文档0050.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
